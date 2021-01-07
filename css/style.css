@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+}
 body {
     font-family: sans-serif;
     background-color: #f5f5f5;
@@ -22,6 +24,8 @@ body {
     max-width: 1200px;
     display: flex;
     margin: auto;
+    padding-left: 4px;
+    padding-right: 4px;
     align-items: center;
     justify-content: space-between;
 }
@@ -65,8 +69,8 @@ header .user-avatar {
 }
 .navigation-panel {
     display: flex;
-    margin-left: 12px;
-    margin-right: 12px;
+    /* margin-left: 12px; */
+    margin-right: 14px;
 }
 .navigation-link {
     display: flex;
@@ -88,7 +92,7 @@ header .user-avatar {
 .navigation-link:last-child::after {
     content: "";
     width: 1px;
-    height: 12px;
+    height: 16px;
     background-color: #003A8C;
     margin-left: 12px;
 }
@@ -101,14 +105,33 @@ header .user-avatar {
     align-items: center;
     margin-right: 17px;
 }
+.icon-info {
+    margin-right: 0;
+}
 .icon-bell::after {
     display: flex;
     content: "";
     width: 1px;
     height: 16px;
     background-color: #003A8C;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 16px;
+    margin-right: 0px;
+}
+.bedge {
+    text-decoration: none;
+    margin: 0px 0px 14px -12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0px 4px;
+    font-size: 13px;
+    color: #fff;
+    background-color: red;
+}
+.icon-dropdown {
+    /* margin: 0; */
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 0px;
 }
 .header-icon {
     fill: #002766;
